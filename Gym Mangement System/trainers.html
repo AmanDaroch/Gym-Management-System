@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Management</title>
+
+    <link rel="stylesheet" href="trainers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Trainer Management</h1>
+
+        <div class="form">
+
+            <input type="text" id="name" placeholder="Trainer Name">
+
+            <input type="text" id="specialization" placeholder="Specialization">
+
+            <input type="number" id="experience" placeholder="Experience (Years)">
+
+            <input type="number" id="salary" placeholder="Salary">
+
+            <input type="text" id="phone" placeholder="Phone Number">
+
+            <button onclick="addTrainer()">Add Trainer</button>
+
+        </div>
+
+        <input type="text" id="search" placeholder="Search Trainer..." onkeyup="searchTrainer()">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Specialization</th>
+                    <th>Experience</th>
+                    <th>Salary</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="trainerTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="trainers.js"></script>
+
+</body>
+
+</html>

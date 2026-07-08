@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Management</title>
+
+    <link rel="stylesheet" href="workout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Workout Plan Management</h1>
+
+        <div class="form">
+
+            <input type="text" id="member" placeholder="Member Name">
+
+            <input type="text" id="exercise" placeholder="Exercise">
+
+            <input type="number" id="sets" placeholder="Sets">
+
+            <input type="number" id="reps" placeholder="Reps">
+
+            <select id="level">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+
+            <button onclick="addWorkout()">Assign Workout</button>
+
+        </div>
+
+        <input type="text" id="search" placeholder="Search Workout..." onkeyup="searchWorkout()">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Member</th>
+                    <th>Exercise</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                    <th>Level</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="workoutTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="workout.js"></script>
+
+</body>
+
+</html>

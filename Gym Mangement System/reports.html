@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gym Reports</title>
+
+    <link rel="stylesheet" href="reports.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Gym Reports & Analytics</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2 id="memberCount">0</h2>
+                <p>Total Members</p>
+            </div>
+
+            <div class="card">
+                <h2 id="trainerCount">0</h2>
+                <p>Total Trainers</p>
+            </div>
+
+            <div class="card">
+                <h2 id="attendanceCount">0</h2>
+                <p>Attendance Records</p>
+            </div>
+
+            <div class="card">
+                <h2>₹ <span id="revenue">0</span></h2>
+                <p>Total Revenue</p>
+            </div>
+
+        </div>
+
+        <div class="chart-container">
+            <canvas id="paymentChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="memberChart"></canvas>
+        </div>
+
+    </div>
+
+    <script src="reports.js"></script>
+
+</body>
+
+</html>

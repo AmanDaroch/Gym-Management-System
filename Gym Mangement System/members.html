@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members | FitLife Gym</title>
+
+    <link rel="stylesheet" href="members.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Gym Member Management</h1>
+
+        <div class="form">
+
+            <input type="text" id="name" placeholder="Member Name">
+
+            <input type="number" id="age" placeholder="Age">
+
+            <select id="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <input type="text" id="phone" placeholder="Phone">
+
+            <select id="plan">
+                <option>Basic</option>
+                <option>Standard</option>
+                <option>Premium</option>
+            </select>
+
+            <button onclick="addMember()">Add Member</button>
+
+        </div>
+
+        <div class="search">
+
+            <input type="text" id="search" placeholder="Search Member..." onkeyup="searchMember()">
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Age</th>
+
+                    <th>Gender</th>
+
+                    <th>Phone</th>
+
+                    <th>Plan</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="memberTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="members.js"></script>
+
+</body>
+
+</html>

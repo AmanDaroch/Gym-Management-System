@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan Management</title>
+
+    <link rel="stylesheet" href="diet.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Diet Plan Management</h1>
+
+        <div class="form">
+
+            <input type="text" id="member" placeholder="Member Name">
+
+            <input type="text" id="breakfast" placeholder="Breakfast">
+
+            <input type="text" id="lunch" placeholder="Lunch">
+
+            <input type="text" id="dinner" placeholder="Dinner">
+
+            <input type="number" id="calories" placeholder="Calories">
+
+            <select id="goal">
+                <option>Weight Loss</option>
+                <option>Muscle Gain</option>
+                <option>Maintenance</option>
+            </select>
+
+            <button onclick="addDiet()">Assign Diet</button>
+
+        </div>
+
+        <input type="text" id="search" placeholder="Search Member..." onkeyup="searchDiet()">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Member</th>
+                    <th>Breakfast</th>
+                    <th>Lunch</th>
+                    <th>Dinner</th>
+                    <th>Calories</th>
+                    <th>Goal</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="dietTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="diet.js"></script>
+
+</body>
+
+</html>
